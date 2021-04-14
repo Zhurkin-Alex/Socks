@@ -6,11 +6,22 @@
       {{!-- <li><a href="/">Home</a></li>  --}}
 
       {{#if email}}
+      {{!-- избранное --}}
+        {{!-- хом --}}
+      {{!-- гениратор --}}
+      <li class="body-nav" ><a href="/mySoks">My soks</a></li>
+      <li class="body-nav" ><a href="/basket">Basket</a></li>
+      <li class="body-nav" ><a href="/genirator">Generator</a></li>
       <li class="body-nav" ><a href="/">Home</a></li>
-      <li class="body-nav" ><a href="/logout">LogOut</a></li>
+      <li class="body-nav" ><a href="/login/logout">LogOut</a></li>
       {{else}}
-      <li class="body-nav" ><a href="/login">LogIn</a></li>
-      <li class="body-nav" ><a href="/registration">Registration</a></li>
+      {{!-- хом --}}
+      {{!-- гениратор --}}
+      <li class="body-nav" ><a href="/">Home</a></li>
+      
+      <li class="body-nav" ><a href="/genirator">Genirator</a></li>
+      <li class="body-nav" ><a href="/login/login">LogIn</a></li>
+      <li class="body-nav" ><a href="/login/registration">Registration</a></li>
 
       {{/if}}
 
