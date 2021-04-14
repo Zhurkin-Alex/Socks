@@ -7,13 +7,14 @@ router.get('/', (req, res) => {
 })
 
 router.post('/mysocks', async (req, res) => {
-  const { color, pictures, pattern } = req.body;
+  const { color, pattern } = req.body;
   const sock = await new Sock({
     color: color,
-    pages: pictures,
+    // pages: pictures,
     uzor: pattern,
   });
   await sock.save();
+  res.send('ok');
 })
 
 module.exports = router;
