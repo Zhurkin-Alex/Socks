@@ -2,8 +2,7 @@ const form = document.querySelector('#selectcolors');
 if (form !== null) {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const { action } = event.target;
-    const response = await fetch(action, {
+    const response = await fetch('/mysocks', {
       method: 'POST',
       headers: {
         "Content-Type": "Application/json",
