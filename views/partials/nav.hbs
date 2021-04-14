@@ -1,0 +1,19 @@
+<nav>
+  <div class="nav-wrapper">
+    
+    <a href="#" class="brand-logo">Socks</a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {{!-- <li><a href="/">Home</a></li>  --}}
+
+      {{#if email}}
+      <li class="body-nav" ><a href="/">Home</a></li>
+      <li class="body-nav" ><a href="/logout">LogOut</a></li>
+      {{else}}
+      <li class="body-nav" ><a href="/login">LogIn</a></li>
+      <li class="body-nav" ><a href="/registration">Registration</a></li>
+
+      {{/if}}
+
+    </ul>
+  </div>
+</nav>
