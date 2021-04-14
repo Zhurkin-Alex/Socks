@@ -20,7 +20,7 @@ middleware(app)
 app.use((req,res, next) => {
   if(req.session && req.session.user){
     res.locals.email = req.session.user.email
-    
+    res.locals.name = req.session.user.name
     // if (req.session.user.role == 'seller') {
     //   res.locals.isSeller = true; 
     // } else {
