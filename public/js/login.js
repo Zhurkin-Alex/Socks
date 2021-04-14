@@ -6,8 +6,9 @@ login?.addEventListener('submit', async(e)=>{
   e.preventDefault()
   const email = e.target.email.value
   const password = e.target.password.value
-
-  const response = await fetch('/login', {
+  console.log('login',email)
+  const response = await fetch('/login/login', {
+    
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -17,7 +18,7 @@ login?.addEventListener('submit', async(e)=>{
   const json = await response.json()
   
   if(json.status ===true){
-    window.location.href = "/picture";
+    window.location.href = "/home";
   }
   else if (json.status === false){
     errLogin.innerHTML = `
