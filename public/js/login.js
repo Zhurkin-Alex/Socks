@@ -18,7 +18,7 @@ login?.addEventListener('submit', async(e)=>{
   const json = await response.json()
   
   if(json.status ===true){
-    window.location.href = "/picture";
+    window.location.href = "/home";
   }
   else if (json.status === false){
     errLogin.innerHTML = `

@@ -22,7 +22,7 @@ registration?.addEventListener("submit", async (e) => {
   // const responseAuth = await response.json()
   // console.log(response.status);
   if (response.status == 200) {
-    window.location.href = "/picture";
+    window.location.href = "/home";
   } else if (response.status == 400) {
     console.log(err);
   }
