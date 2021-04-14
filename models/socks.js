@@ -7,4 +7,4 @@ const socksSchema = new mongoose.Schema({
   uzor:  { type: String, required: true }
 });
 
-module.exports = mongoose.model("socks", userSchema);
+module.exports = mongoose.model("socks", socksSchema);
