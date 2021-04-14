@@ -6,8 +6,9 @@ login?.addEventListener('submit', async(e)=>{
   e.preventDefault()
   const email = e.target.email.value
   const password = e.target.password.value
-
-  const response = await fetch('/login', {
+  console.log('login',email)
+  const response = await fetch('/login/login', {
+    
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

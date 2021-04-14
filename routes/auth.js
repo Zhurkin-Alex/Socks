@@ -33,6 +33,7 @@ router
     res.render("auth/login");
   })
   .post(async (req, res) => {
+    console.log('login - beck');
     const { email, password } = req.body;
     const user = await User.findOne({ email });
     // console.log(user);
