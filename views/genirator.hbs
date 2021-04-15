@@ -9,18 +9,18 @@
 </div>
 
 <div class="colorsblock" id="imgsblock">
-  <div class="imgblock"><img name='Duck.png' src="/js/img/Duck.png" alt=""></div>
-  <div class="imgblock"><img name='Banana.png' src="/js/img/Banana.png" alt=""></div>
-  <div class="imgblock"><img name='Apple.png' src="/js/img/Apple.png" alt=""></div>
-  <div class="imgblock"><img name='Batman.png' src="/js/img/Batman.png" alt=""></div>
-  <div class="imgblock"><img name='Avocado.png' src="/js/img/Avocado.png" alt=""></div>
+  <div class="imgblock"><img name='Duck' src="/js/img/Duck.png" alt=""></div>
+  <div class="imgblock"><img name='Banana' src="/js/img/Banana.png" alt=""></div>
+  <div class="imgblock"><img name='Apple' src="/js/img/Apple.png" alt=""></div>
+  <div class="imgblock"><img name='Batman' src="/js/img/Batman.png" alt=""></div>
+  <div class="imgblock"><img name='Avocado' src="/js/img/Avocado.png" alt=""></div>
 </div>
 
 {{!-- Выбор цвета и узора: --}}
 <form action="/newsock" id='selectcolors' method="POST">
 
 <select required name="colorselect" id="colorselect" class="colorsel">
-  <option id="mainselect" style="background-color: none" selected disabled value="none">Выберите цвет</option>
+  <option selected disabled id="mainselect" style="background-color: none" value="none">Выберите цвет</option>
   <option id="tomatoselect" style="background-color: tomato;" class="colorOpt" value="tomato"></option>
   <option id="indigoselect" style="background-color: indigo;" class="colorOpt" value="indigo"></option>
   <option id="springgreenselect" style="background-color: springgreen;" class="colorOpt" value="springgreen"></option>
@@ -49,6 +49,6 @@
 </form>
 
 <div class="bigimg" >
-<img id="demoimg" src="/public/js/img/BigBanana .png" height="200px" width="200px" style="display: none;"">
+<img id="demoimg" src="" height="200px" width="200px" style="display: none;"">
 </div>
 </section>

@@ -1,4 +1,4 @@
-console.log("basket");
+// console.log("basket");
 
 const addSocks = document.querySelectorAll(".socks-id-add");
 addSocks.forEach((el) => {
