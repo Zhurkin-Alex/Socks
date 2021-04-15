@@ -1,5 +1,7 @@
 const router = require("express").Router();
 const Sock = require('../models/socks');
+const { findOne } = require("../models/user");
+const User = require('../models/user')
 
 router.get('/', async (req, res) => {
   const socksList = await Sock.find({});
@@ -9,7 +11,7 @@ router.get('/', async (req, res) => {
   })
 })
 
-router.post('/mysocks', async (req, res) => {
+router.post('/', async (req, res) => {
   const { color, pattern, img } = req.body;
   console.log(color, pattern, img)
   const sock = new Sock({
@@ -18,7 +20,14 @@ router.post('/mysocks', async (req, res) => {
     img,
   });
   await sock.save();
-  res.send('ok');
+  const { user } = req.session
+  
+  console.log('email-------', user.email);
+  const username = await User.findOne({email:user.email})
+  console.log(username);
+  username.socks.push(sock)
+  await username.save()
+  res.send('');
 })
 
 module.exports = router;
