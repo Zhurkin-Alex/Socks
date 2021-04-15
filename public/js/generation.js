@@ -15,3 +15,11 @@ if (form !== null) {
     // console.log(result);
   })
 }
+
+const tomatoselect = document.querySelector('#tomatoselect');
+const colorselect = document.querySelector('#colorselect')
+// console.log(tomatoselect)
+// console.log(colorselect)
+colorselect.addEventListener('change', (e) => {
+  console.log(e.target)
+})
