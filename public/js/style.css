@@ -19,7 +19,7 @@ body, html{
   height: 100vh;
 }
 .home{
-  background: url('../img/socksHome1.jpg') no-repeat center center fixed;
+  background: url('./img/socksHome1.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 .home, .home-video{
@@ -51,6 +51,6 @@ body, html{
 .home-name_btn:hover{
   background-color: #9899eb;
 }
-.geniration{
-  height: 100vh;
+.geniration, .mySocks, .basket, .login, .registration{
+  min-height: 100vh;
 }
