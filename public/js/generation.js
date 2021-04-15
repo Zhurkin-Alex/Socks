@@ -39,9 +39,9 @@ imgselect.addEventListener('change', () => {
 // Вывод демо-картинки при нажатии на боковой панели
 imagesblock.addEventListener('click', (e) => {
   if (e.target.name != undefined) {
-    demoimg.src = `/js/img/Big${e.target.name}`
+    demoimg.src = `/js/img/Big${e.target.name}.png`
     demoimg.style.display = 'flex'
-    // imgselect.value = e.target.name
+    imgselect.value = e.target.name
     console.log(e.target.name)
     // console.log(imgselect)
     // console.dir(imgselect)
