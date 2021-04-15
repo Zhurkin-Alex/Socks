@@ -28,20 +28,20 @@ const colorselect = document.querySelector('#colorselect')
 const imagesblock = document.querySelector('#imgsblock')
 
 // Изменение цвета в Селекте
-  colorselect.addEventListener('change', () => {
+  colorselect?.addEventListener('change', () => {
   const optionsFrom = colorselect.options.selectedIndex;
   const selectedValue = colorselect.options[optionsFrom].value
   colorselect.style.background = selectedValue
 })
 
 // Вывод демо-картинки при выборе в списке
-imgselect.addEventListener('change', () => {
+imgselect?.addEventListener('change', () => {
   demoimg.src = `/js/img/Big${imgselect.options[imgselect.options.selectedIndex].value}.png`
   demoimg.style.display = 'flex'
 })
 
 // Вывод демо-картинки при нажатии на боковой панели
-imagesblock.addEventListener('click', (e) => {
+imagesblock?.addEventListener('click', (e) => {
   if (e.target.name != undefined) {
     demoimg.src = `/js/img/Big${e.target.name}`
     demoimg.style.display = 'flex'

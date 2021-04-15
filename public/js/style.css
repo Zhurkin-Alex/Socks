@@ -19,7 +19,7 @@ body, html{
   min-height: 100vh;
 }
 .home{
-  background: url('./img/socksHome1.jpg') no-repeat center center fixed;
+  background: url('../img/socksHome1.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
 }
@@ -93,6 +93,10 @@ body, html{
 }
 .socks-btn_color{
   background-color:indianred
+}
+.geniration{
+  background: url('../img/socksGenerator.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 @media(max-width:1000px){
 
