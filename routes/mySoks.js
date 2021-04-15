@@ -1,8 +1,12 @@
 const router = require("express").Router();
 const Sock = require('../models/socks');
 
-router.get('/', (req, res) => {
-  res.render('mySoks')
+router.get('/', async (req, res) => {
+  const socksList = await Sock.find({});
+  res.render('mySoks', {
+    title: 'Мои носки',
+    socksList,
+  })
 })
 
 router.post('/mysocks', async (req, res) => {
