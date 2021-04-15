@@ -4,6 +4,9 @@ if (form !== null) {
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const { colorselect, patternselect, imgselect } = event.target;
+
+    // console.log(colorselect.value)
+
     const response = await fetch('/mySoks', {
       method: 'POST',
       headers: {
@@ -20,6 +23,7 @@ const demoimg = document.querySelector('#demoimg')
 const imgselect = document.querySelector('#imgselect')
 // Список выбора цвета
 const colorselect = document.querySelector('#colorselect')
+
 // Блок с картинками (левый)
 const imagesblock = document.querySelector('#imgsblock')
 
@@ -42,12 +46,19 @@ imagesblock.addEventListener('click', (e) => {
     demoimg.src = `/js/img/Big${e.target.name}.png`
     demoimg.style.display = 'flex'
     imgselect.value = e.target.name
-    console.log(e.target.name)
+    // console.log(e.target.name)
     // console.log(imgselect)
     // console.dir(imgselect)
-    console.log(imgselect.selectedIndex)
-    console.log(imgselect.value)
+    // console.log(imgselect.selectedIndex)
+    // console.log(imgselect.value)
   }
 })
 
 // Изменение селекта при нажатии на изображение
+
+// console.log(tomatoselect)
+// console.log(colorselect)
+// colorselect.addEventListener('change', (e) => {
+//   console.log(e.target)
+// })
+
