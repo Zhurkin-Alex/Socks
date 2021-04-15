@@ -3,3 +3,16 @@ select {
   width: 300px;
   border: 1px solid solid;
 }
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-item{
+  
+}
