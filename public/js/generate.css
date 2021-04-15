@@ -20,8 +20,13 @@
   background-color: blueviolet;
   width: 400px;
   flex-direction: column;
+  background-color: white;
 }
 
-.geniration form .select {
-  
+.colorOpt {
+font-size: 20pt;
+padding: 10px;
+text-align: center;
+justify-content: center;
 }
+
