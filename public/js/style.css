@@ -21,8 +21,9 @@ body, html{
 .home{
   background: url('./img/socksHome1.jpg') no-repeat center center fixed;
   background-size: cover;
+  height: 100vh;
 }
-.home, .home-video{
+.home-video{
   height: 100%;
 }
 .home-video{
@@ -56,3 +57,38 @@ body, html{
   min-height: 100vh;
 }
 
+.bascet-card{
+  border: 3px solid grey;
+  min-width: 230px;
+ padding: 25px;
+
+}
+.box-socks{
+  margin-top: 200px;
+}
+.socks-name{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+.socks-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socks-box_btn{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+.socks-btn{
+  margin: 5px 0 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.socks-btn_color{
+  background-color:indianred
+}
