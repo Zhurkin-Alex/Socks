@@ -31,25 +31,18 @@ justify-content: center;
 display: flex;
 }
 
-.colorOpt:hover {
-  position: relative;
-  left: -20px;
-}
-
-.colorselect:hover {
-  position: relative;
-  left: -20px;
-}
-
-
 .patternOpt {
   font-size: 20pt;
 }
+
 .favoriteButton {
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   outline: none;
   border: 0px;
-  background-color: rgb(206, 205, 204);
+  background-color: #ee6e73;
+  border-radius: 10px;
+  color: white;
 }
 
 .classblock {
@@ -76,4 +69,19 @@ display: flex;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+#selectcolors select {
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  outline-style: none;
+}
+
+.bigimg {
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
 }
