@@ -3,14 +3,14 @@ const Sock = require('../models/socks');
 const { findOne } = require("../models/user");
 const User = require('../models/user')
 
-router.get('/', async (req, res) => {
-  const socksList = await Sock.find({}, {_id: 0, __v: 0});
-  console.log(socksList)
-  res.render('mySoks', {
-    title: 'Мои носки',
-    socksList,
-  })
-})
+// router.get('/', async (req, res) => {
+//   const socksList = await Sock.find({}, {_id: 0, __v: 0});
+//   console.log(socksList)
+//   res.render('mySoks', {
+//     title: 'Мои носки',
+//     socksList,
+//   })
+// })
 
 router.post('/', async (req, res) => {
   const { color, pattern, img } = req.body;
