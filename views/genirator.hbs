@@ -2,13 +2,6 @@
 {{!-- Выбор цвета и узора: --}}
 <form action="/newsock" id='selectcolors' method="POST">
 
-<select name="tagselect" id="tagselect">
-  <option value="dotted"> - - -  - - -  - - - - </option>
-  <option value="dashed">---   ---   ---   ---    ---</option>
-  <option value="solid">------------------</option>
-  <option value="double">==========</option>
-  </select>
-
 <select name="colorselect" id="colorselect">
   <option value="red">red</option>
   <option value="blue">blue</option>
@@ -16,6 +9,22 @@
   <option value="black">black</option>
   <option value="green">green</option>
 </select>
-<button type="submit">В избранное</button>
+
+<select name="patternselect" id="patternselect">
+  <option value="dotted">Треугольники</option>
+  <option value="dashed">Квадраты</option>
+  <option value="solid">Круги</option>
+  <option value="double">Стрелки</option>
+  </select>
+
+<select name="imgselect" id="imgselect">
+  <option value="img1">Duck</option>
+  <option value="img2">Banana</option>
+  <option value="img3">Apple</option>
+  <option value="img4">Moon</option>
+  <option value="img5">Avocado</option>
+</select>
+
+<button class="favoriteButton" type="submit">В избранное</button>
 </form>
 </section>
