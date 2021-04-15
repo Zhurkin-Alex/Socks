@@ -1,7 +1,7 @@
 const login = document.querySelector('.login-form')
 const errLogin = document.querySelector('.login-email-err')
 const errPassword = document.querySelector('.login-password-err')
-console.log(login);
+// console.log(login);
 login?.addEventListener('submit', async(e)=>{
   e.preventDefault()
   const email = e.target.email.value

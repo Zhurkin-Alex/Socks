@@ -3,7 +3,7 @@ const Favorite = require('../models/favorites');
 
 router.get('/', async (req, res) => {
   const favoriteList = await Favorite.find({}, {_id: 0, __v: 0});
-  console.log(favoriteList)
+  // console.log(favoriteList)
   res.render('mySoks')
 })
 
