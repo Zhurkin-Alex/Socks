@@ -28,7 +28,7 @@ router.post(`/add/:id`, async(req,res)=>{
 router.post(`/min/:id`, async(req,res)=>{
   console.log(12345, 'del-');
   const{id}= req.params
-  console.log('id++++',id);
+  // console.log('id++++',id);
   const socks =await Socks.findOne({_id:id})
   console.log(socks);
   if(socks.count>0){
@@ -44,7 +44,7 @@ router.post(`/min/:id`, async(req,res)=>{
 router.post(`/del/:id`, async(req,res)=>{
   // console.log(12345, 'del');
   const{id}= req.params
-  console.log('id++++',id);
+  // console.log('id++++',id);
   const socks =await Socks.findByIdAndDelete({_id:id})
   // console.log(socks);
  res.json({socks:false})
