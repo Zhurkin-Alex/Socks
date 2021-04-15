@@ -1,14 +1,13 @@
-<<<<<<< Ilia
-<h1>{{title}}</h1>
-
-<ul>
-  {{#each sock}}
-  <li class="mysocks">{{this}}</li>
-  {{/each}}
-</ul>
-=======
 <section class="mySocks">
-<h1>Мои Носки</h1>
-</section>
+  <h1>{{title}}</h1>
 
->>>>>>> create
+<div>
+    {{#each socksList}}
+    <div class="favorites">
+      {{this.color}} {{this.pattern}} {{this.img}}
+      <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-services="vkontakte,telegram,whatsapp">
+      </div>
+    </div>
+    {{/each}}
+</div>
+</section>
