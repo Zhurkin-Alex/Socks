@@ -8,6 +8,7 @@ const pictureRouter = require('./routes/pictures')
 const geniratorRouter = require('./routes/genirator')
 const basketRouter = require('./routes/basket')
 const mySoksRouter = require('./routes/mySoks')
+const favoritesSocks = require('./routes/favorites')
 //for db connection
 const dbConnection = require('./middleware/dbConnection')
 
@@ -40,4 +41,5 @@ app.use('/login', authRouter)
 app.use('/registration', authRouter)
 app.use('/mySoks', mySoksRouter)
 app.use('/picture', pictureRouter)
+app.use('/favorites', favoritesSocks)
 module.exports = app
