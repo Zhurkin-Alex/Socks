@@ -4,12 +4,16 @@ const User = require('../models/user')
 
 router.get('/', async (req, res) => {
 
+
   const favoriteList = await Favorite.find({});
+
   res.render('mySoks', {
     title: 'Избранное',
     favoriteList,
   })
-});
+
+})
+
 
 router.post('/', async (req, res) => {
   const { color, pattern, img } = req.body;
