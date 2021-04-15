@@ -120,3 +120,17 @@ socksDelete.forEach(el=>{
     }
   })
 })
+
+
+const btnBuy = document.querySelector('.btn-socks_btn')
+
+btnBuy?.addEventListener('click', async (e)=>{
+  
+  const response = await fetch(`/basket/buy`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "Application/json",
+    },
+    
+  });
+})
