@@ -1,10 +1,11 @@
+
 select {
   display: flex;
   width: 300px;
   border: 1px solid solid;
 }
 footer{
-  position: absolute;
+  position: sticky;
   width: 100%;
   bottom: 0;
 }
@@ -12,7 +13,30 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.footer-item{
   
+}
+body, html{
+  height: 100vh;
+}
+.home{
+  background: url('../img/socksHome1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.home, .home-video{
+  height: 100%;
+}
+.home-video{
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+.home-text_name{
+  font-family: 'New Tegomin', serif;
+  font-size: 35px;
+  font-weight: 600;
+  padding-right: 150px;
+}
+.nav-box{
+  display: flex;
 }
