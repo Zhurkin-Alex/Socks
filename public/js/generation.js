@@ -3,7 +3,7 @@ if (form !== null) {
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const { colorselect, patternselect, imgselect } = event.target;
-    console.log(colorselect.value)
+    // console.log(colorselect.value)
     const response = await fetch('/mySoks', {
       method: 'POST',
       headers: {
@@ -20,6 +20,6 @@ const tomatoselect = document.querySelector('#tomatoselect');
 const colorselect = document.querySelector('#colorselect')
 // console.log(tomatoselect)
 // console.log(colorselect)
-colorselect.addEventListener('change', (e) => {
-  console.log(e.target)
-})
+// colorselect.addEventListener('change', (e) => {
+//   console.log(e.target)
+// })
