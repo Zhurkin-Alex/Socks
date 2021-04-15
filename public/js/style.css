@@ -52,19 +52,23 @@ body, html{
 .home-name_btn:hover{
   background-color: #9899eb;
 }
-
+.basket{
+  background: url('../img/socksBascet.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
 .geniration, .mySocks, .basket, .login, .registration{
   min-height: 100vh;
 }
 
 .bascet-card{
+  background-color: rgba(250, 179, 179, 0.52);
   border: 3px solid grey;
   min-width: 230px;
  padding: 25px;
 
 }
 .box-socks{
-  margin-top: 200px;
+  padding-top: 200px;
 }
 .socks-name{
   display: flex;
@@ -92,10 +96,26 @@ body, html{
   align-items: center;
 }
 .socks-btn_color{
-  background-color:indianred
+  background-color:indianred;
+  
+}
+.socks-count{
+  font-weight: 600;
+  font-size: 20px;
+  color:rgb(78, 85, 92)
 }
 .geniration{
   background: url('../img/socksGenerator.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.footer-container{
+  padding-bottom: 10px;
+  font-family: 'New Tegomin', serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.mySocks{
+  background: url('../img/socksMysocks.png') no-repeat center center fixed;
   background-size: cover;
 }
 @media(max-width:1000px){
