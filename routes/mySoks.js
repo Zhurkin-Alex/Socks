@@ -6,11 +6,12 @@ router.get('/', (req, res) => {
 })
 
 router.post('/mysocks', async (req, res) => {
-  const { color, pattern } = req.body;
+  const { color, pattern, img } = req.body;
+  console.log(color, pattern, img)
   const sock = new Sock({
-    color: color,
-    pages: pictures,
-    uzor: pattern,
+    color,
+    pattern,
+    img,
   });
   await sock.save();
   res.send('ok');
