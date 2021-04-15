@@ -5,6 +5,7 @@ if (fav !== null) {
     const buttonColorSelect = event.target.parentElement.colorselect.value;
     const buttonPatternselect = event.target.parentElement.patternselect.value;
     const buttonImgselect = event.target.parentElement.imgselect.value;
+
     const errormessage = document.querySelector('.errormessage')
     // console.log(buttonColorSelect, buttonPatternselect, buttonImgselect)
     if (buttonColorSelect != 'none' &&  buttonPatternselect != 'none' && buttonImgselect != 'none') {
@@ -20,5 +21,20 @@ if (fav !== null) {
     } else {
       errormessage.style.display = 'flex'
     }
+
+  })
+}
+
+const del = document.querySelectorAll('.delete');
+if (del.length !== 0) {
+  del.forEach(el => {
+    el.addEventListener('click', async (event) => {
+      event.preventDefault();
+      const response = await fetch('/favorites', {
+        method: 'DELETE'
+      })
+      const result = await response.text();
+
+    })
   })
 }
