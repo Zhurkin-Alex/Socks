@@ -1,13 +1,27 @@
-<section class="mySocks">
-  <div>{{title}}</div>
 
-<div>
-    {{#each socksList}}
-    <div class="favorites">
-      {{this.color}} {{this.pattern}} {{this.img}}
-      <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-services="vkontakte,telegram,whatsapp">
+<section class="favorite">
+  <div class="box-socks">
+    <div class="socks-item">
+      <div>
+        {{#each favoriteList}}
+        <div data-id={{this._id}} class="socks-box_btn">
+          <div class="bascet-card">
+            <div class="socks-name socks-color">
+              <p>Цвет - </p> {{this.color}}
+            </div>
+            <div class="socks-name socks-pattern">
+              <p>Узор - </p> {{this.pattern}}
+            </div>
+            <div class="socks-name socks-img">
+              <p>Картинка - </p>{{this.img}}
+            </div>
+            <div class="ya-share2" data-curtain data-shape="round" data-services="vkontakte,telegram,whatsapp"></div>
+          </div>
+          <button data-id = {{this._id}} class="socks-delit_card socks-id socks-btn_color waves-effect waves-light btn delete">Удалить из избранного</button>
+        </div>
+        {{/each}}
+
       </div>
     </div>
-    {{/each}}
-</div>
+  </div>
 </section>

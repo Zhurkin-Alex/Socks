@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
   await sock.save();
   const { user } = req.session
   
-  console.log('email-------', user.email);
+  // console.log('email-------', user.email);
   const username = await User.findOne({email:user.email})
   console.log(username);
   username.socks.push(sock)
