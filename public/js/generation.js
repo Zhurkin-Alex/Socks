@@ -4,7 +4,7 @@ if (form !== null) {
     event.preventDefault();
     const { colorselect, patternselect, imgselect } = event.target;
     console.log(colorselect.value)
-    const response = await fetch('/mysocks', {
+    const response = await fetch('/mySoks', {
       method: 'POST',
       headers: {
         "Content-Type": "Application/json",

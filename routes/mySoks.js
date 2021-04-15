@@ -9,9 +9,8 @@ router.get('/', async (req, res) => {
   })
 })
 
-router.post('/mysocks', async (req, res) => {
+router.post('/', async (req, res) => {
   const { color, pattern, img } = req.body;
-  console.log(color, pattern, img)
   const sock = new Sock({
     color,
     pattern,
