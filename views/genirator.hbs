@@ -2,27 +2,28 @@
 {{!-- Выбор цвета и узора: --}}
 <form action="/newsock" id='selectcolors' method="POST">
 
-<select name="colorselect" id="colorselect">
-  <option value="red">red</option>
-  <option value="blue">blue</option>
-  <option value="white">white</option>
-  <option value="black">black</option>
-  <option value="green">green</option>
+<select name="colorselect" id="colorselect" class="colorsel">
+  <option selected disabled value="none">Выберите цвет</option>
+  <option style="background-color: tomato;" class="colorOpt" value="tomato"></option>
+  <option style="background-color: indigo;" class="colorOpt" value="indigo"></option>
+  <option style="background-color: springgreen;" class="colorOpt" value="springgreen"></option>
+  <option style="background-color: yellow;" class="colorOpt" value="yellow"></option>
+  <option style="background-color: violet;" class="colorOpt" value="violet"></option>
 </select>
 
 <select name="patternselect" id="patternselect">
-  <option value="dotted">Треугольники</option>
-  <option value="dashed">Квадраты</option>
-  <option value="solid">Круги</option>
-  <option value="double">Стрелки</option>
+  <option value="▲▲▲▲▲▲▲▲▲▲">▲▲▲▲▲▲▲▲▲▲</option>
+  <option value="▢▢▢▢▢▢▢▢▢▢">▢▢▢▢▢▢▢▢▢▢</option>
+  <option value="⊛⊛⊛⊛⊛⊛⊛⊛⊛⊛">⊛⊛⊛⊛⊛⊛⊛⊛⊛⊛</option>
+  <option value="╳╳╳╳╳╳╳╳╳╳">╳╳╳╳╳╳╳╳╳╳</option>
   </select>
 
 <select name="imgselect" id="imgselect">
-  <option value="img1">Duck</option>
-  <option value="img2">Banana</option>
-  <option value="img3">Apple</option>
-  <option value="img4">Moon</option>
-  <option value="img5">Avocado</option>
+  <option value="Duck">Duck</option>
+  <option value="Banana">Banana</option>
+  <option value="Apple">Apple</option>
+  <option value="Moon">Moon</option>
+  <option value="Avocado">Avocado</option>
 </select>
 
 <button class="favoriteButton" type="submit">В избранное</button>
