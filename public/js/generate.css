@@ -1,0 +1,27 @@
+.favoriteButton {
+  width: 200px;
+  height: 30px;
+}
+
+#id selectcolors {
+  border: 13px solid black;
+}
+
+
+.geniration{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  vertical-align: middle;
+}
+
+.geniration form {
+  background-color: blueviolet;
+  width: 400px;
+  flex-direction: column;
+}
+
+.geniration form .select {
+  
+}
