@@ -51,6 +51,9 @@ const sockboard = document.querySelector('.socktemplate')
 imgselect?.addEventListener('change', () => {
   demoimg.src = `/js/img/Big${imgselect.options[imgselect.options.selectedIndex].value}.png`
   demoimg.style.display = 'flex'
+  console.log(imgselect.value)
+  leftpart.style.backgroundImage = `url('/js/img/${imgselect.value}small.png')`
+  rightpart.style.backgroundImage = `url('/js/img/${imgselect.value}small.png')`
 })
 
 // Вывод демо-картинки при нажатии на боковой панели

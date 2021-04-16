@@ -133,7 +133,8 @@ body {
   background-color: blue;
   border-bottom-right-radius: -20px;
   /* background-image: url('/js/img/Avocadosmall.png'); */
-  background-repeat: repeat space;
+  background-repeat: repeat round;
+  opacity: 70%;
 
 }
 
@@ -147,7 +148,11 @@ body {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 30px;
   /* background-image: url('/js/img/Avocadosmall.png'); */
-  background-repeat: repeat space;
+  background-repeat: repeat round;
+  opacity: 70%;
+  
+}
 
-
+#colorselect {
+  opacity: 70%;
 }
