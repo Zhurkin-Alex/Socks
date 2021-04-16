@@ -1,0 +1,149 @@
+
+select {
+  display: flex;
+  width: 300px;
+  border: 1px solid solid;
+}
+footer{
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+body, html{
+  min-height: 100vh;
+}
+.home{
+  /* background: url('../img/socksHome1.jpg') no-repeat center center fixed; */
+  background-size: cover;
+  height: 100vh;
+}
+.home-video{
+  height: 100%;
+}
+.home-video{
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+.home-text_name{
+  font-family: 'New Tegomin', serif;
+  font-size: 35px;
+  font-weight: 600;
+  padding-right: 150px;
+}
+.nav-box{
+  display: flex;
+}
+.home-name{
+  display: flex;
+  padding-top: 65px;
+  justify-content: center;
+}
+.home-name_btn{
+  background-color: #2628a6;
+}
+.home-name_btn:hover{
+  background-color: #9899eb;
+}
+.basket{
+  background: url('../img/socksBascet.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.geniration, .mySocks, .basket, .login, .registration{
+  min-height: 100vh;
+}
+
+.bascet-card{
+  background-color: rgba(250, 179, 179, 0.52);
+  border: 3px solid grey;
+  min-width: 230px;
+ padding: 25px;
+
+}
+.box-socks{
+  padding-top: 200px;
+}
+.socks-name{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+.socks-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.socks-box_btn{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+.socks-btn{
+  margin: 5px 0 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.socks-btn_color{
+  background-color:indianred;
+  
+}
+.socks-count{
+  font-weight: 600;
+  font-size: 20px;
+  color:rgb(78, 85, 92)
+}
+.geniration{
+  /* background: url('../img/socksGenerator.jpg') no-repeat center center fixed; */
+  background-size: cover;
+}
+.footer-container{
+  padding-bottom: 10px;
+  font-family: 'New Tegomin', serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.mySocks{
+  background: url('../img/socksMysocks.png') no-repeat center center fixed;
+  background-size: cover;
+}
+@media(max-width:1000px){
+
+  nav .brand-logo{
+    display: none;
+  }
+  .home-text_name{
+    padding-right: 10px;
+  }
+  
+}
+@media(max-width:780px){
+
+  .home-text_name{
+   display: none;
+  }
+  .geniration{
+    flex-direction: column;
+  }
+  .colorsblock{
+    width: auto;
+    flex-direction:row;
+    height:auto;
+    padding-bottom: 50px;
+  }
+  nav .nav-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+}

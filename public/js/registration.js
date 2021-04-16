@@ -1,4 +1,4 @@
-console.log("hi");
+// console.log("hi");
 const pictureBody = document.querySelector(".pictureBody");
 
 const registration = document.querySelector(".registration");
@@ -8,7 +8,7 @@ registration?.addEventListener("submit", async (e) => {
   const { name, email, password } = e.target;
 
   console.log(name.value);
-  const response = await fetch("/registration", {
+  const response = await fetch("/login/registration", {
     method: "POST",
     headers: {
       "Content-type": "Application/json",
@@ -22,7 +22,7 @@ registration?.addEventListener("submit", async (e) => {
   // const responseAuth = await response.json()
   // console.log(response.status);
   if (response.status == 200) {
-    window.location.href = "/picture";
+    window.location.href = "/home";
   } else if (response.status == 400) {
     console.log(err);
   }

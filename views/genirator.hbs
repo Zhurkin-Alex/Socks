@@ -1,0 +1,60 @@
+<div class="socktemplate">
+<div class="leftpart"></div>
+<div class="rightpart"></div>
+</div>
+
+<section class="geniration">
+
+<div class="colorsblock" id="blockwithcolors" >
+  <div style="background-color: tomato;" id="tomato" class="classblock"></div>
+  <div style="background-color: indigo;" id="indigo" class="classblock"></div>
+  <div style="background-color: springgreen;" id="springgreen" class="classblock"></div>
+  <div style="background-color: yellow;" id="yellow" class="classblock"></div>
+  <div style="background-color: violet;" id="violet" class="classblock"></div>
+</div>
+
+<div class="colorsblock" id="imgsblock">
+  <div class="imgblock"><img name='Duck' src="/js/img/Duck.png" alt=""></div>
+  <div class="imgblock"><img name='Banana' src="/js/img/Banana.png" alt=""></div>
+  <div class="imgblock"><img name='Apple' src="/js/img/Apple.png" alt=""></div>
+  <div class="imgblock"><img name='Batman' src="/js/img/Batman.png" alt=""></div>
+  <div class="imgblock"><img name='Avocado' src="/js/img/Avocado.png" alt=""></div>
+</div>
+
+{{!-- Выбор цвета и узора: --}}
+<form action="/newsock" id='selectcolors' method="POST">
+
+<select required name="colorselect" id="colorselect" class="colorsel">
+  <option selected disabled id="mainselect" style="background-color: none" value="none">Выберите цвет</option>
+  <option id="tomatoselect" style="background-color: tomato;" class="colorOpt" value="tomato"></option>
+  <option id="indigoselect" style="background-color: indigo;" class="colorOpt" value="indigo"></option>
+  <option id="springgreenselect" style="background-color: springgreen;" class="colorOpt" value="springgreen"></option>
+  <option id="yellowselect" style="background-color: yellow;" class="colorOpt" value="yellow"></option>
+  <option id="violetselect" style="background-color: violet;" class="colorOpt" value="violet"></option>
+</select>
+
+<select required name="patternselect" id="patternselect">
+  <option selected disabled value="none">Выберите узор</option>
+  <option class="patternOpt" value="▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲">▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲</option>
+  <option class="patternOpt" value="▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢">▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢ ▢</option>
+  <option class="patternOpt" value="⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛">⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛ ⊛</option>
+  <option class="patternOpt" value="╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳">╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳ ╳</option>
+  </select>
+
+<select required name="imgselect" id="imgselect">
+  <option selected disabled value="none">Выберите рисунок</option>
+  <option value="Duck">Duck</option>
+  <option value="Banana">Banana</option>
+  <option value="Apple">Apple</option>
+  <option value="Batman">Batman</option>
+  <option value="Avocado">Avocado</option>
+</select>
+<div class="errormessage">Заполните все поля!</div>
+<button id="favbt" class="favoriteButton" type="button">В избранное</button>
+<button class="favoriteButton" type="submit">В корзину</button>
+</form>
+
+<div class="bigimg" >
+<img id="demoimg" src="" height="200px" width="200px" style="display: none;"">
+</div>
+</section>

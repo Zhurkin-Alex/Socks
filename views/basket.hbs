@@ -1,0 +1,44 @@
+<section class="basket">
+  <div class="box-socks">
+    <div class="socks-item">
+      {{#each userSoks}}
+      <div data-id = {{this._id}} class="socks-box_btn">
+        <div class="bascet-card">
+          <div class="socks-name socks-color">
+            <p>Цвет - </p> {{this.color}}
+          </div>
+          <div class="socks-name socks-pattern">
+            <p>Узор - </p> {{this.pattern}}
+          </div>
+          <div class="socks-name socks-img">
+            <p>Картинка - </p>{{this.img}}
+          </div>
+        </div>
+        <div class="socks-btn">
+          <div class="socks-btn_two">
+            <button data-id = {{this._id}}  class="socks-btn_id-add socks-id-add socks-id socks-btn_color waves-effect waves-light btn">+</button>
+            <button data-id = {{this._id}} class="socks-btn_id-del socks-id socks-btn_color waves-effect waves-light btn">-</button>
+            <button data-id = {{this._id}} class="socks-delit_card socks-id socks-btn_color waves-effect waves-light btn">Delete</button>
+          </div>
+
+          <div data-id ={{this._id}} class="socks-count">           
+            {{this.count}}          
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="basket-socks">
+       {{!-- <button data-id = {{this._id}} class="socks-delit_by socks-id socks-btn_color waves-effect waves-light btn">buy</button> --}}
+
+        <button class="btn-socks_btn waves-effect waves-light btn">buy</button>
+    </div>
+  </div>
+
+</section>
+
+{{!-- <div class="div">
+  ${#each userSoks}
+  ${userSoks. count}
+  ${/each}
+</div> --}}
