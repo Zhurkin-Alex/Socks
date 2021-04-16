@@ -7,6 +7,7 @@ const saltRounds = 10;
 // console.log(111);
 
 router.get("/", sessionChecker, (req, res) => {
+ console.log('loginsya');
   res.redirect("/registration");
 });
 router.get("/registration", sessionChecker, (req, res) => {

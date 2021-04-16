@@ -10,7 +10,8 @@
   display: flex;
   vertical-align: middle;
   flex-direction: row;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .geniration form {
@@ -22,7 +23,9 @@
   justify-content: center;
   align-items: center;
 }
-
+.geniration-box_style{
+  display: flex;
+}
 .colorOpt {
 font-size: 20pt;
 padding: 10px;
@@ -84,6 +87,7 @@ display: flex;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  padding-left: 10px;
 }
 
 .errormessage {
@@ -112,8 +116,9 @@ body {
   width: 230px;
   height: 100%;
   display: flex;
-  margin-bottom: -200px;
-  margin-top: 50px;
+  /* margin-bottom: -200px; */
+  /* margin-top: 50px; */
+  margin-bottom: 80px;
   margin-right: 80px;
   /* border: 2px solid black; */
   justify-content: left;

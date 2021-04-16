@@ -1,162 +1,308 @@
-
 select {
   display: flex;
   width: 300px;
   border: 1px solid solid;
 }
-footer{
+nav {
+  height: auto;
+}
+footer {
   position: sticky;
   width: 100%;
   bottom: 0;
+  z-index: 1;
 }
-.footer-container{
+.footer-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
-body, html{
+body,
+html {
   min-height: 100vh;
 }
-.home{
-  background: url('../img/socksHome1.jpg') no-repeat center center fixed;
+.nav-wrapper a {
+  padding-left: 10px;
+}
+.home {
+  background: url("../img/socksHome1.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
-.home-video{
+.home-video {
   height: 100%;
 }
-.home-video{
+.home-video {
   display: flex;
   justify-content: center;
-  padding-top: 300px;
+  padding-top: 100px;
 }
 
-.home-text_name{
-  font-family: 'New Tegomin', serif;
+.home-text_name {
+  font-family: "New Tegomin", serif;
   font-size: 35px;
   font-weight: 600;
   padding-right: 150px;
 }
-.nav-box{
+.nav-box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.home-name{
+.home-name {
   display: flex;
   padding-top: 65px;
   justify-content: center;
 }
-.home-name_btn{
+.home-name_btn {
   background-color: #2628a6;
 }
-.home-name_btn:hover{
+.home-name_btn:hover {
   background-color: #9899eb;
 }
-.basket{
-  background: url('../img/socksBascet.jpg') no-repeat center center fixed;
+.btn-socks_btn {
+  background-color: #c2db31;
+  padding: 10px 55px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.btn-socks_btn:hover {
+  background-color: #eeb738e8;
+}
+.basket {
+  background: url("../img/socksBascet.jpg") no-repeat center center fixed;
   background-size: cover;
   width: 100%;
 }
-.geniration, .mySocks, .basket, .login, .registration{
+.geniration,
+.mySocks,
+.basket,
+.login,
+.registration {
   min-height: 100vh;
   width: 100%;
 }
 
-.bascet-card{
+.bascet-card {
   background-color: rgba(250, 179, 179, 0.52);
   border: 3px solid grey;
   min-width: 230px;
- padding: 25px;
-
+  padding: 25px;
 }
-.box-socks{
+.box-socks {
   padding-top: 200px;
 }
-.socks-name{
+.socks-name {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  
 }
-.socks-item{
+.socks-item {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.socks-box_btn{
+.socks-box_btn {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-right: 10px;
   padding-top: 20px;
 }
-.socks-btn{
+.socks-btn {
   margin: 5px 0 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.socks-btn_color{
-  background-color:indianred;
-  
+.socks-btn_color {
+  background-color: indianred;
 }
-.socks-count{
+.socks-count {
   font-weight: 600;
   font-size: 20px;
-  color:rgb(78, 85, 92)
+  color: rgb(78, 85, 92);
 }
-.geniration{
-  /* background: url('../img/socksGenerator.jpg') no-repeat center center fixed; */
+.geniration {
+  background: url('../img/genirator-socks2.jpg') no-repeat center center fixed;
   background-size: cover;
+  position: relative;
+  
 }
-.footer-container{
+
+.footer-container {
   padding-bottom: 10px;
-  font-family: 'New Tegomin', serif;
+  font-family: "New Tegomin", serif;
   font-weight: 600;
   font-size: 18px;
 }
-.mySocks, .favorite{
-  background: url('../img/socksMysocks.png') no-repeat center center fixed;
+.mySocks,
+.favorite {
+  background: url("../img/socksMysocks.png") no-repeat center center fixed;
   background-size: cover;
   width: 100%;
-  
-    height: 100vh;
+
+  height: 100vh;
 }
-.login-form{
+.login {
+  background: url("../img/socks-login.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+.login-box,
+.registr-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 25%;
+}
+.login-form {
+  background-color: rgba(245, 203, 203, 0.472);
+  border: 2px solid rgba(193, 145, 233, 0.856);
+  border-radius: 5px;
+  width: 300px;
+}
+.login-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.login-btn_touch {
+  background-color: rgb(228, 81, 81);
+  border-radius: 5px;
+}
+.login-btn_touch:hover {
+  background-color: rgba(214, 69, 24, 0.89);
+}
+.registration {
+  background: url("../img/socks-home.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.socks-boks-item {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.registr-block {
+  width: 350px;
+  background-color: rgba(245, 203, 203, 0.472);
   border: 2px solid rgba(193, 145, 233, 0.856);
   border-radius: 5px;
 }
-.socks-boks-item{
-display: flex;
+.regist-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
 }
-@media(max-width:1000px){
-
-  nav .brand-logo{
+.registration-Btn {
+  border-radius: 8px;
+}
+.registr-block input::placeholder {
+  color: rgba(226, 23, 23, 0.815);
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "New Tegomin", serif;
+}
+.login-input_color::placeholder {
+  color: rgba(226, 23, 23, 0.815);
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "New Tegomin", serif;
+}
+.basket-socks {
+  display: flex;
+  justify-content: center;
+  padding-top: 220px;
+  flex-direction: column;
+  align-items: center;
+}
+.basket-text {
+  font-family: "New Tegomin", serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(98, 60, 14);
+  padding: 15px;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 10px;
+}
+@media (max-width: 1000px) {
+  nav .brand-logo {
     display: none;
   }
-  .home-text_name{
+  .home-text_name {
     padding-right: 10px;
   }
-  
 }
-@media(max-width:780px){
-
-  .home-text_name{
-   display: none;
+@media (max-width: 780px) {
+  .home-text_name {
+    display: none;
   }
-  .geniration{
+  .geniration {
     flex-direction: column;
+    padding-top: 20px;
   }
-  .colorsblock{
+  .colorsblock {
     width: auto;
-    flex-direction:row;
-    height:auto;
+    flex-direction: row;
+    height: auto;
     padding-bottom: 50px;
   }
-  nav .nav-wrapper{
+  nav .nav-wrapper {
     display: flex;
     justify-content: center;
+  }
+  .basket-socks {
+    padding-top: 50px;
+  }
+  .box-socks {
+    padding-top: 45px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .generation-card_color {
+    /* position: absolute;
+    bottom: 15px; */
+    display: flex;
+    order: -1;
+    margin-top: 10px;
+  }
+  .generation-card_img{
+    display: flex;
+    order: -1;
+    padding-bottom: 0;
+  }
+  .socktemplate{
+    margin-bottom: 15px;
+    display: flex;
+  }
+  .home{
+    /* height: auto; */
+  }
+  .home-video iframe{
+    width: auto;
+    height: 300px;
+  }
+  .home-video{
+    padding-top: 35px;
+  }
+  .home-name{
+    padding-bottom: 20px;
+  }
+  .geniration form{
+    width: 300px;
+  }
+  .bigimg{
+    margin-bottom: 8px;
+  }
+  .geniration-box_style{
+    flex-direction: column;
   }
 }

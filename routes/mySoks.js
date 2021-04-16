@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Sock = require('../models/socks');
 const { findOne } = require("../models/user");
 const User = require('../models/user')
-
+const {sessionCheckerLogin} = require('../middleware/auth')
 // router.get('/', async (req, res) => {
 //   const socksList = await Sock.find({}, {_id: 0, __v: 0});
 //   console.log(socksList)
@@ -12,7 +12,8 @@ const User = require('../models/user')
 //   })
 // })
 
-router.post('/', async (req, res) => {
+router.post('/', sessionCheckerLogin, async (req, res) => {
+  console.log('loginsya');
   const { color, pattern, img } = req.body;
   const sock = new Sock({
     color,
