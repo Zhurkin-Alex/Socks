@@ -1,22 +1,21 @@
 <section class="login">
   <div class="container">
-
-
-
-    <form class="login-form" action="/login" method="post">
-      <div class="col s4">
-        <div class="form-group col s4">
-          <input type="email" name="email" class=" email" placeholder="email">
-          <div class="login-email-err"></div>
+    <div class="login-box">
+      <form class="login-form" action="/login" method="post">
+        <div class="col s4">
+          <div class="form-group col s4">
+            <input type="email" name="email" class="login-input_color email" placeholder="email">
+            <div class="login-email-err"></div>
+          </div>
+          <div class="form-group col s4">
+            <input type="password" name="password" class="login-input_color password" placeholder="password">
+            <div class="login-password-err"></div>
+          </div>
+          <div class="login-btn text-center col s4">
+            <button class="btn login-btn_touch" type="submit" >Login</button>
+          </div>
         </div>
-        <div class="form-group col s4">
-          <input type="password" name="password" class=" password" placeholder="password">
-          <div class="login-password-err"></div>
-        </div>
-        <div class="text-center col s4">
-          <button type="submit" class="btn ">Login</button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </section>

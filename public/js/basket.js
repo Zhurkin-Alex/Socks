@@ -133,4 +133,12 @@ btnBuy?.addEventListener('click', async (e)=>{
     },
     
   });
+  const result= await response.json()
+  console.log(result);
+  if(result.sucsess ===true){
+    const divText = document.querySelector('.basket-text')
+    divText.innerText = `
+    Спасибо за заказ, в ближайшее время с вами свяжется наш менеджер
+    `
+  }
 })

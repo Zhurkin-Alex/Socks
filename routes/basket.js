@@ -92,7 +92,7 @@ router.post('/buy', async(req,res)=>{
   main().catch(console.error);
   
 
-  res.json('ok')
+  res.json({sucsess:true})
 
 
 })

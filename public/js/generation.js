@@ -67,7 +67,7 @@ imagesblock?.addEventListener('click', (e) => {
 
 // Изменение селекта цвета при нажатии на изображение
 
-colorsblock.addEventListener('click', (e) => {
+colorsblock?.addEventListener('click', (e) => {
 if( e.target.id != undefined) {
   colorselect.value = e.target.id
   colorselect.style.backgroundColor = colorselect.value
