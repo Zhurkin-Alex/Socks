@@ -30,8 +30,9 @@ router.post('/', async (req, res) => {
   return
 });
 
-router.delete('/del/:id', async (req, res) => {
-  
+router.delete('/', async (req, res) => {
+  await Favorite.findByIdAndDelete(req.body.id);
+  res.send('1');
 })
 
 module.exports = router;
