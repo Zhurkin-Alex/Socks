@@ -132,8 +132,8 @@ body {
   display: flex;
   background-color: blue;
   border-bottom-right-radius: -20px;
-  background-image: url('/js/img/Avocadosmall.png');
-  background-repeat: round;
+  /* background-image: url('/js/img/Avocadosmall.png'); */
+  background-repeat: repeat space;
 
 }
 
@@ -146,8 +146,8 @@ body {
   border-top-right-radius: 70px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 30px;
-  background-image: url('/js/img/Avocadosmall.png');
-  background-repeat: round;
+  /* background-image: url('/js/img/Avocadosmall.png'); */
+  background-repeat: repeat space;
 
 
 }

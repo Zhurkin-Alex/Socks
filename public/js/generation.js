@@ -42,8 +42,8 @@ const sockboard = document.querySelector('.socktemplate')
   const selectedValue = colorselect.options[optionsFrom].value
   colorselect.style.background = selectedValue
   sockboard.style.display = 'flex'
-  leftpart.style.background = selectedValue
-  rightpart.style.background = selectedValue
+  leftpart.style.backgroundColor = selectedValue
+  rightpart.style.backgroundColor = selectedValue
 
 })
 
@@ -59,7 +59,9 @@ imagesblock?.addEventListener('click', (e) => {
     demoimg.src = `/js/img/Big${e.target.name}.png`
     demoimg.style.display = 'flex'
     imgselect.value = e.target.name
-    leftpart.style.background.image = `url('/js/img/${e.target.name}small.png')`
+    leftpart.style.backgroundImage = `url('/js/img/${e.target.name}small.png')`
+    rightpart.style.backgroundImage = `url('/js/img/${e.target.name}small.png')`
+
   }
 })
 
@@ -68,10 +70,10 @@ imagesblock?.addEventListener('click', (e) => {
 colorsblock.addEventListener('click', (e) => {
 if( e.target.id != undefined) {
   colorselect.value = e.target.id
-  colorselect.style.background = colorselect.value
+  colorselect.style.backgroundColor = colorselect.value
   sockboard.style.display = 'flex'
-  leftpart.style.background = colorselect.value
-  rightpart.style.background = colorselect.value
+  leftpart.style.backgroundColor = colorselect.value
+  rightpart.style.backgroundColor = colorselect.value
 } else {
   sockboard.style.display = 'none'
   leftpart.style.display = 'none'
