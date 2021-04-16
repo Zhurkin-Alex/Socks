@@ -2,24 +2,29 @@
   <div class="nav-wrapper">
     
     <a href="#" class="brand-logo">Socks</a>
-     <ul id="nav-mobile" class="right hide-on-med-and-down">
+     <ul id="nav-mobile" class="right  ">
       {{!-- <li><a href="/">Home</a></li>  --}}
 
       {{#if email}}
       {{!-- избранное --}}
         {{!-- хом --}}
       {{!-- гениратор --}}
-      <li class="body-nav" ><a href="/mySoks">My socks</a></li>
-      <li class="body-nav" ><a href="/basket">Basket</a></li>
-      <li class="body-nav" ><a href="/genirator">Generator</a></li>
+      <div class="nav-box ">
+        <div class="home-text_name">Hello {{name}}</div>
+
       <li class="body-nav" ><a href="/">Home</a></li>
+      <li class="body-nav" ><a href="/genirator">Generator</a></li>
+      <li class="body-nav" ><a href="/favorites">Favorites</a></li>
+      <li class="body-nav" ><a href="/basket">Basket</a></li>
       <li class="body-nav" ><a href="/login/logout">LogOut</a></li>
+      </div>
+      
       {{else}}
       {{!-- хом --}}
       {{!-- гениратор --}}
       <li class="body-nav" ><a href="/">Home</a></li>
       
-      <li class="body-nav" ><a href="/genirator">Genirator</a></li>
+      <li class="body-nav" ><a href="/genirator">Generator</a></li>
       <li class="body-nav" ><a href="/login/login">LogIn</a></li>
       <li class="body-nav" ><a href="/login/registration">Registration</a></li>
 

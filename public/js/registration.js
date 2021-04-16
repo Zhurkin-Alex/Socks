@@ -1,4 +1,4 @@
-console.log("hi");
+// console.log("hi");
 const pictureBody = document.querySelector(".pictureBody");
 
 const registration = document.querySelector(".registration");

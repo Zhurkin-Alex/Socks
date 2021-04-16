@@ -12,8 +12,15 @@ const sessionChecker = (req, res, next) => {
     next();
   }
 };
-
+const sessionCheckerLogin = (req, res, next) => {
+  if (!req.session.user) {
+    res.redirect("/login");
+  } else {
+    next();
+  }
+};
 module.exports = {
   sessionChecker,
-  cookiesCleaner
+  cookiesCleaner,
+  sessionCheckerLogin
 };

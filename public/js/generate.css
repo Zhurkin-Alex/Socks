@@ -1,0 +1,158 @@
+.favoriteButton {
+  width: 150px;
+  height: 30px;
+}
+
+.geniration{
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  vertical-align: middle;
+  flex-direction: row;
+  display: flex;
+  flex-direction: column;
+}
+
+.geniration form {
+  background-color: blueviolet;
+  width: 400px;
+  flex-direction: column;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.geniration-box_style{
+  display: flex;
+}
+.colorOpt {
+font-size: 20pt;
+padding: 10px;
+text-align: center;
+justify-content: center;
+display: flex;
+}
+
+.patternOpt {
+  font-size: 20pt;
+}
+
+.favoriteButton {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  outline: none;
+  border: 0px;
+  background-color: #ee6e73;
+  border-radius: 10px;
+  color: white;
+}
+
+.classblock {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.imgblock {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.colorsblock {
+  width: 60px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#selectcolors select {
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  outline-style: none;
+}
+
+.bigimg {
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.errormessage {
+  width: 300px;
+  background-color: red;
+  border-radius: 5px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  display: none;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socktemplate {
+  width: 230px;
+  height: 100%;
+  display: flex;
+  /* margin-bottom: -200px; */
+  /* margin-top: 50px; */
+  margin-bottom: 80px;
+  margin-right: 80px;
+  /* border: 2px solid black; */
+  justify-content: left;
+  flex-direction: column;
+  vertical-align: bottom;
+  /* display: none; */
+  /* border: 1px solid black; */
+}
+
+.leftpart {
+  width: 120px;
+  height: 200px;
+  /* border-top: 1px solid black; */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  background-color: blue;
+  border-bottom-right-radius: -20px;
+  /* background-image: url('/js/img/Avocadosmall.png'); */
+  background-repeat: repeat space;
+
+}
+
+.rightpart {
+  width: 250px;
+  height: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  background-color: blue;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 30px;
+  /* background-image: url('/js/img/Avocadosmall.png'); */
+  background-repeat: repeat space;
+
+
+}
